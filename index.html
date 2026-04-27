@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My GitHub Pages Site</title>
+<title>Theme Park Safety Control Prototype</title>
 
 <style>
 body {
@@ -13,15 +13,27 @@ body {
     background-color: #111;
     color: white;
     text-align: center;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
 }
 
 h1 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #dddddd;
+    margin-bottom: 35px;
+    text-align: left;
 }
 
 .video-container {
-    max-width: 900px;
-    margin: auto;
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
@@ -42,16 +54,24 @@ h1 {
 
 <body>
 
-<h1>Featured Video</h1>
+<div class="container">
+
+<h1>Theme Park Safety Control Prototype</h1>
+
+<p class="description">
+This project is a real-time safety control prototype for a theme park ride, developed in Wokwi using an ESP32 microcontroller and FreeRTOS. The system monitors simulated ride restraint pressure, provides a manual emergency stop button, and activates visual alerts when unsafe conditions are detected. A green status LED indicates normal operation, while a red LED signals an active emergency stop. The design uses tasks, interrupts, semaphores, and a mutex to demonstrate predictable timing and reliable response for safety-critical events.
+</p>
 
 <div class="video-container">
-    <iframe
-        src="https://www.youtube.com/embed/mTYqhWWdAns"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-    </iframe>
+<iframe
+src="https://www.youtube.com/embed/mTYqhWWdAns"
+title="YouTube video player"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen>
+</iframe>
+</div>
+
 </div>
 
 </body>
